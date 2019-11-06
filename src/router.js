@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Undersida from "./components/Undersida.vue";
+import Home from "./components/Home.vue";
 Vue.use(Router);
 const router = new Router({
     mode: "hash",
@@ -8,8 +8,8 @@ const router = new Router({
     routes: [
         {
             path: "/",
-            name: "Undersida",
-            component: Undersida
+            name: "Home",
+            component: Home
         }
     ]
 });

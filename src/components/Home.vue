@@ -30,7 +30,7 @@
 
 <script>
 export default {
-    name: "Undersida",
+    name: "Home",
     props: {}
 };
 </script>
@@ -41,10 +41,10 @@ export default {
 
     .carl-johan-img {
         align-items: left;
-        padding: 30px;
+        padding: 0px;
     }
     .side-block-text {
-        padding: 50px;
+        padding: 30px;
     }
 }
 @media only screen and (max-width: 0px), only screen and (max-width: 1200px) {

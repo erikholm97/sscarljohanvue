@@ -107,11 +107,10 @@ $font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
                     display: none;
                 }
                 /* Style the navigation menu */
-                .hamburger-navbar{
-                  display: block;
+                .hamburger-navbar {
+                    display: block;
                 }
                 .topnav {
-                    
                     visibility: visible;
                     overflow: hidden;
                     background-color: $fifth-color;
