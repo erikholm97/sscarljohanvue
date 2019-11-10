@@ -1,7 +1,8 @@
 <template>
     <div id="app">
         <Header />
-        <router-view></router-view>
+        <router-view>   
+        </router-view>
         <Footer />
     </div>
 </template>
@@ -25,7 +26,8 @@ $second-color: #a6a6a6;
 $third-color: #595959;
 $fourth-color: #262626;
 $fifth-color: #0d0d0d;
-$font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+$font: 'Montserrat', sans-serif;
 * {
     font-family: $font;
     body {
