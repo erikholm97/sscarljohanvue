@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./components/Home.vue";
 import Info from "./components/Info.vue";
+import HittaHit from "./components/HittaHit.vue";
 Vue.use(Router);
 const router = new Router({
     mode: "hash",
@@ -14,6 +15,21 @@ const router = new Router({
         },
         {
             path: "/Info",
+            name: "Info",
+            component: Info
+        },
+        {
+            path: "/HittaHit",
+            name: "HittaHit",
+            component: HittaHit
+        },
+        {
+            path: "/info",
+            name: "Info",
+            component: Info
+        },
+        {
+            path: "/info",
             name: "Info",
             component: Info
         }
