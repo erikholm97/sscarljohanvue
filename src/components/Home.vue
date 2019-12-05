@@ -9,20 +9,19 @@
             />
         </div>
         <div class="side-block-text">
-            <h1>Projektet Carl Johan</h1>
+            <h1>Ångbåtsprojektet Carl Johan</h1>
             <p>
-                På denna den här sidan kan du följa ångbåtsprojektet Carl Johan. Hålla
-                dig uppdaterad kring händelser, event, tider & priser. Även
-                hitta till Carl Johan Muséet, där du kan få reda på mer historia
-                kring det vackra fartyget. Samtidigt som du gör en historisk
-                vandring kring ångbåtens händelser och restaureringen av den.
-                Utöver ångbåten Carl Johan finns det även båtmotorer, mopeder,
-                motorcyklar, ångmaskiner samt erhålls även ett radio och
-                grammofon-samlings-muséum. Hela ångbåtsprojektet är bekostat med
-                egna medel och med god hjälp av vänner och bekanta. Vill jag
-                passa på att tacka alla som hjälp till. Samtidigt som jag vill
-                hälsa alla välkomna till Carl Johan/Radio och grammofon muséet i
-                Romanäs.
+                Välkommen till sidan om ångbåtsprojektet Carl Johan. Här hittar
+                du information om båten, projektet och dess historia. Du kan
+                även hålla dig uppdaterad kring olika händelser som berör båten
+                och evangemang. Ett besök på muséet kommer ge dig en hisorisk
+                vandring genom ångbåtens händelser och restaureringen av den.
+                Utöver ångbåten finner du motorfordon som mopeder och
+                motorcyklar. Men även båtmotorer, ångmaskiner och en radio och
+                grammofon-samling.
+                <br />
+                Hela ångbåtsprojektet är bekostat med egna medel och med god
+                hjälp av vänner och bekanta. 
             </p>
         </div>
     </div>
@@ -39,7 +38,7 @@ export default {
     display: flex;
     align-items: center;
     animation: animation 3s alternate;
-    h1{
+    h1 {
         text-align: left;
     }
     .carl-johan-img {
@@ -49,10 +48,17 @@ export default {
     .side-block-text {
         padding: 30px;
     }
+    p{
+        letter-spacing: normal;
+    }
 }
 @keyframes animation {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @media only screen and (max-width: 0px), only screen and (max-width: 1200px) {
     .page-content {
