@@ -4,22 +4,13 @@
         <div class="navbar">
             <ul>
                 <li>
-                        <router-link to="/">Hem</router-link>
+                    <router-link to="/">Hem</router-link>
                 </li>
                 <li>
-                    
-                        <router-link to="Info">Info</router-link>
-                    
+                    <router-link to="Info">Info</router-link>
                 </li>
                 <li>
-                    
-                        <router-link to="HittaHit">Hitta Hit</router-link>
-                    
-                </li>
-                <li>
-                   
-                        <router-link to="Info">Info</router-link>
-                   
+                    <router-link to="HittaHit">Hitta Hit</router-link>
                 </li>
             </ul>
         </div>
@@ -31,20 +22,18 @@
             <div class="topnav">
                 <a href="#home" class="home">SS Carl Johan</a>
                 <div id="myLinks">
-                    
-                        <router-link to="/">Hem</router-link>
-                    
-                    
-                        <router-link to="Info">Info</router-link>
+                    <router-link to="/">Hem</router-link>
 
-                        <router-link to="HittaHit">Hitta Hit</router-link>
-                    
-                    
-                        
-                    
-                    
+                    <router-link to="Info">Info</router-link>
+
+                    <router-link to="HittaHit">Hitta Hit</router-link>
                 </div>
-                <a alt="hamburgerbutton" href="javascript:void(0);" class="icon" @click="myFunction()">
+                <a
+                    alt="hamburgerbutton"
+                    href="javascript:void(0);"
+                    class="icon"
+                    @click="myFunction()"
+                >
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
@@ -67,15 +56,14 @@ export default {
     },
     methods: {
         myFunction: function() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
     }
-    }
-    
 };
 </script>
 
@@ -121,7 +109,7 @@ $font: "Montserrat", sans-serif;
                 font-weight: 600;
             }
         }
-        .hamburger-navbar{
+        .hamburger-navbar {
             display: none;
         }
         header {

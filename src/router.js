@@ -22,18 +22,7 @@ const router = new Router({
             path: "/HittaHit",
             name: "HittaHit",
             component: HittaHit
-        },
-        {
-            path: "/info",
-            name: "Info",
-            component: Info
-        },
-        {
-            path: "/info",
-            name: "Info",
-            component: Info
         }
-
     ]
 });
 export default router;
