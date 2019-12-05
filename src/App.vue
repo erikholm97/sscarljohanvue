@@ -1,5 +1,4 @@
 <template>
-    <!--Delil test3-->
     <div id="app">
         <Header />
         <div class="navbar">
@@ -12,6 +11,9 @@
                 </li>
                 <li>
                     <router-link to="HittaHit">Hitta Hit</router-link>
+                </li>
+                <li>
+                    <router-link to="Dikter">Dikter</router-link>
                 </li>
             </ul>
         </div>

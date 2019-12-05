@@ -11,7 +11,7 @@
         <div class="side-block-text">
             <h1>Projektet Carl Johan</h1>
             <p>
-                På den här sidan kan du följa ångbåtsprojektet Carl Johan. Hålla
+                På denna den här sidan kan du följa ångbåtsprojektet Carl Johan. Hålla
                 dig uppdaterad kring händelser, event, tider & priser. Även
                 hitta till Carl Johan Muséet, där du kan få reda på mer historia
                 kring det vackra fartyget. Samtidigt som du gör en historisk
