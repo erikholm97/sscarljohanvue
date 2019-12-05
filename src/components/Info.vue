@@ -1,6 +1,6 @@
 <template>
   <div>
-      hej
+      Info sida
   </div>
 </template>
 
