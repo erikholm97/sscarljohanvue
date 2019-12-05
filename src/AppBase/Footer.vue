@@ -1,7 +1,7 @@
 <template>
   <footer>
-  Skapad av: Erik Holm
-  Kontakt: Lennart Holm
+  Skapad av: Erik Holm, Delil Demirsoy Jonathan Holén
+  <br>Kontakt: Lennart Holm
   Telefon: 0140-13598
   
 </footer>
@@ -20,6 +20,6 @@ export default {
         margin-top: 30px;
         color: $fifth-color;
         display: block;
-        text-align: right;
+        text-align: center;
       }
 </style>

@@ -38,7 +38,10 @@ export default {
 .page-content {
     display: flex;
     align-items: center;
-
+    animation: animation 3s alternate;
+    h1{
+        text-align: left;
+    }
     .carl-johan-img {
         align-items: left;
         padding: 0px;
@@ -46,6 +49,10 @@ export default {
     .side-block-text {
         padding: 30px;
     }
+}
+@keyframes animation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 @media only screen and (max-width: 0px), only screen and (max-width: 1200px) {
     .page-content {
