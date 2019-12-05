@@ -47,6 +47,13 @@ export default {
         padding: 30px;
     }
 }
+.page-content{
+    animation: animation 3s alternate;
+}
+@keyframes animation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
 @media only screen and (max-width: 0px), only screen and (max-width: 1200px) {
     .page-content {
         display: block;
