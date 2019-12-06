@@ -1,10 +1,8 @@
 <template>
-  <footer>
-  Skapad av: Erik Holm, Delil Demirsoy Jonathan Holén
-  <br>Kontakt: Lennart Holm
-  Telefon: 0140-13598
-  
-</footer>
+    <footer>
+        Skapad av: Erik Holm, Delil Demirsoy Jonathan Holén
+        <br />Kontakt: Lennart Holm Telefon: 0140-13598
+    </footer>
 </template>
 
 <script>
@@ -16,10 +14,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-      footer{
-        margin-top: 30px;
-        color: $fifth-color;
-        display: block;
-        text-align: center;
-      }
+footer {
+    margin-top: 30px;
+    color: $fifth-color;
+    display: block;
+    text-align: center;
+}
 </style>

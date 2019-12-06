@@ -1,5 +1,5 @@
 <template>
-<h1>dikter</h1>
+    <h1>dikter</h1>
 </template>
 
 <script>
@@ -9,5 +9,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

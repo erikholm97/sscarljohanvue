@@ -2,8 +2,18 @@
     <div>
         <h1>Logga in</h1>
         <div class="login">
-            <input type="text" name="username" placeholder="Användarnamn" v-model="input.username" />
-            <input type="password" name="password" v-model="input.password" placeholder="Password" />
+            <input
+                type="text"
+                name="username"
+                placeholder="Användarnamn"
+                v-model="input.username"
+            />
+            <input
+                type="password"
+                name="password"
+                v-model="input.password"
+                placeholder="Password"
+            />
             <button type="button" v-on:click="login()">Login</button>
 
             <div>
