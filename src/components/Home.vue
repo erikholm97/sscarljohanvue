@@ -2,11 +2,7 @@
     <div class="page-content">
         <div class="side-block-img">
             <h1>Projektet & Muséet</h1>
-            <img
-                class="carl-johan-img"
-                src="../assets/carljohan1.jpg"
-                alt="steamboat"
-            />
+            <img class="carl-johan-img" src="../assets/carljohan1.jpg" alt="steamboat" />
         </div>
         <div class="side-block-text">
             <h1>Ångbåtsprojektet Carl Johan</h1>
@@ -19,9 +15,8 @@
                 Utöver ångbåten finner du motorfordon som mopeder och
                 motorcyklar. Men även båtmotorer, ångmaskiner och en radio och
                 grammofon-samling.
-                <br />
-                Hela ångbåtsprojektet är bekostat med egna medel och med god
-                hjälp av vänner och bekanta. 
+                <br />Ångbåtsprojektet är bekostat av egna medel och med god
+                hjälp av vänner och bekanta.
             </p>
         </div>
     </div>
@@ -48,7 +43,7 @@ export default {
     .side-block-text {
         padding: 30px;
     }
-    p{
+    p {
         letter-spacing: normal;
     }
 }

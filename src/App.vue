@@ -18,11 +18,13 @@
             </ul>
         </div>
         <div class="hamburger-navbar">
+            <!--Fetching the style of hamburger bar.-->
             <link
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
             />
             <div class="topnav">
+                <!--Mobile phone links-->
                 <a href="#home" class="home">SS Carl Johan</a>
                 <div id="myLinks">
                     <router-link to="/">Hem</router-link>
@@ -30,13 +32,10 @@
                     <router-link to="Info">Info</router-link>
 
                     <router-link to="HittaHit">Hitta Hit</router-link>
+
+                    <router-link to="Dikter">Dikter</router-link>
                 </div>
-                <a
-                    alt="hamburgerbutton"
-                    href="javascript:void(0);"
-                    class="icon"
-                    @click="myFunction()"
-                >
+                <a href="javascript:void(0);" class="icon" @click="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
@@ -57,7 +56,8 @@ export default {
         Footer,
         Header
     },
-    methods: { // Funktion som används för hamburgerknappen. 
+    methods: {
+        // Funktion som används för hamburgerknappen.
         myFunction: function() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "block") {
@@ -76,7 +76,7 @@ $second-color: #a6a6a6;
 $third-color: #595959;
 $fourth-color: #262626;
 $fifth-color: #0d0d0d;
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap"); //Font från google. 
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap"); //Font från google.
 $font: "Montserrat", sans-serif;
 * {
     font-family: $font;
