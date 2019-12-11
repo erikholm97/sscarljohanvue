@@ -5,6 +5,7 @@ import Info from "./components/Info.vue";
 import HittaHit from "./components/HittaHit.vue";
 import Dikter from "./components/Dikter.vue";
 import LoggaIn from "./components/LoggaIn.vue";
+import AddPoem from "./components/AddPoem";
 Vue.use(Router);
 const router = new Router({
     mode: "hash",
@@ -34,6 +35,11 @@ const router = new Router({
             path: "/LoggaIn",
             name: "LoggaIn",
             component: LoggaIn
+        },
+        {
+            path: "/AddPoem",
+            name: "AddPoem",
+            component: AddPoem
         }
     ]
 });
