@@ -2,7 +2,7 @@
     <div id="AddPoem">
         <ul class="collection with-header">
             <li class="collection-header">
-                <h4>Poems</h4>
+                <h4>Poemss</h4>
             </li>
             <li v-for="Poems in poems" v-bind:key="Poems.id" class="collection-item">
                 {{Poems.Rubrik}}
