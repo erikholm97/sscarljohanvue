@@ -1,4 +1,4 @@
-<template><!--Delil test2-->
+<template>
     <div id="app">
         <Header />
         <div class="navbar">
