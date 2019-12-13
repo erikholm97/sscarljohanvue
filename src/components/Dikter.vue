@@ -1,5 +1,5 @@
 <template>
-    <h1>dikter</h1>
+    <h1>Dikter</h1>
 </template>
 
 <script>
@@ -9,4 +9,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped lang="scss">
+h1 {
+    text-align: center;
+}
+</style>
