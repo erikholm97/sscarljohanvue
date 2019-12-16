@@ -1,7 +1,7 @@
 <template>
     <footer>
         Skapad av: Erik Holm, Delil Demirsoy Jonathan Holén
-        <br />Kontakt: Lennart Holm Telefon: 0140-13598
+        
     </footer>
 </template>
 
@@ -15,9 +15,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 footer {
-    margin-top: 30px;
-    color: $fifth-color;
-    display: block;
-    text-align: center;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: $fifth-color;
+   color: $base-color;
+   text-align: center;
+   font-size: 15px;
 }
+    
 </style>
