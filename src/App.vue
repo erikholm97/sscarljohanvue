@@ -213,11 +213,12 @@ $font: "Montserrat", sans-serif;
             }
         }
     }
-    @media only screen and (max-width: 375px) { /* For screens smaller than 365px */
+    @media only screen and (max-width: 375px) {
+        /* For screens smaller than 365px */
         .carl-johan {
             display: none;
         }
-        .overflow{
+        .overflow {
             height: 95px !important;
         }
     }

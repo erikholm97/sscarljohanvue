@@ -21,16 +21,16 @@
                     <li>
                         <p>
                             <strong>Maskinen: </strong> Maskinen är en
-                            compoundmaskin (med strålkondensor)<br> på cirka 35-40
-                            hp, 55 ind hp.
+                            compoundmaskin (med strålkondensor)<br />
+                            på cirka 35-40 hp, 55 ind hp.
                         </p>
                     </li>
                     <li>
                         <p>
                             <strong>Fartyget är byggt av:</strong>
                             Motala verkstads ingenjörer och
-                            skeppsstrongyggmästare,<br> även hantverkare från
-                            strongygden runt Sommen.
+                            skeppsstrongyggmästare,<br />
+                            även hantverkare från strongygden runt Sommen.
                         </p>
                     </li>
                 </ul>
@@ -75,9 +75,7 @@ export default {
             }
             .side-block-text {
                 text-align: center;
-                
             }
-            
         }
     }
 }
