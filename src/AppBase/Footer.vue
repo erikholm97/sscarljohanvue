@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>Skapad av: Erik Holm, Delil Demirsoy Jonathan Holén</p>
+        <p>Skapad av: Erik Holm, Delil Demirsoy, Jonathan Holén</p>
     </footer>
 </template>
 
