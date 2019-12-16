@@ -1,46 +1,44 @@
 <template>
-    <div id="AddPoem">
-        <ul class="collection with-header">
-            <li class="collection-header">
-                <h4>Poems</h4>
-            </li>
-            <li
-                v-for="Poems in poems"
-                v-bind:key="Poems.id"
-                class="collection-item"
-            >
-                {{ Poems.Rubrik }}
-                {{ Poems.PoemCont }}
-            </li>
-        </ul>
+    <div id="NewPoem">
+        <h3>Ny dikt</h3>
+        <div class = row>
+            <form @submit.prevent="savePoem" class="NewPoem">
+                <div class="row">
+                    <div class="input-field col 12">
+                        <input type="text" v-model="Rubrik" required>
+                        <label>Diktens rubrik</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col 12">
+                        <input type="text" v-model="PoemCont" required>
+                        <label>Dikten</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn" >Submit</button>
+                <router-link to="/" class="btn_Cancel">Cancel</router-link>
+            </form>
+        </div>
     </div>
 </template>
-
 <script>
-import db from "./firebaseInit";
-export default {
-    name: "AddPoem",
-    data() {
-        return {
-            poems: []
-        };
-    },
-    created() {
-        db.collection("Poems")
-            .get()
-            .then(querySnapshot => {
-                querySnapshot.forEach(doc => {
-                    const data = {
-                        id: doc.id, //Firebase given id to 'poem'
-                        Poem_Id: doc.data().Poem_Id, //Our given Id to the poem
-                        Rubrik: doc.data().Rubrik, //The "rubrik" to the poem
-                        PoemCont: doc.data().PoemCont //The content of the poem, this is where the actually poem is stored.
-                    };
-                    this.poems.push(data); //This sends the data from firebase to div AddPoem
-                });
-            });
+import db from './firebaseInit'
+    export default {
+        name: 'new-poem',
+        data(){
+            return{
+                Rubrik: null,           //Set the content of Poem rubrik to null.
+                PoemCont: null,
+            }
+        },
+        methods: {
+            savePoem(){
+               db.collection('Poems').add({
+                   Rubrik: this.Rubrik,      //This.Rubrik is bound to v-model ="rubrik"
+                   PoemCont: this.PoemCont
+               }).catch(onerror => console.log(onerror));       //If any errors occurs, show it in console window.
+                this.$router.push('/')
+            }
+        }
     }
-};
 </script>
-
-<style scoped></style>

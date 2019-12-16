@@ -1,16 +1,51 @@
 <template>
-    <h1>Dikter</h1>
+    <div id="AddPoem">
+        <h1>Dikter</h1>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h4>Poems</h4>
+            </li>
+            <li
+                    v-for="Poems in poems"
+                    v-bind:key="Poems.id"
+                    class="collection-item"
+            >
+                {{ Poems.Rubrik }}          <!--  This is the poems headline/rubrik/name(?) -->
+                {{ Poems.PoemCont }}            <!--  This is the actuall content of the poem-->
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>
-export default {
-    name: "Dikter",
-    props: {}
-};
-</script>
+    import db from "./firebaseInit";
 
+    export default {
+        name: "AddPoem",
+        data() {
+            return {
+                poems: []
+            };
+        },
+        created() {
+            db.collection("Poems")
+                .get()
+                .then(querySnapshot => {
+                    querySnapshot.forEach(doc => {
+                        const data = {
+                            id: doc.id, //Firebase given id to 'poem'
+                           // Poem_Id: doc.data().Poem_Id, //Our given Id to the poem
+                            Rubrik: doc.data().Rubrik, //The "rubrik" to the poem
+                            PoemCont: doc.data().PoemCont //The content of the poem, this is where the actually poem is stored.
+                        };
+                        this.poems.push(data); //This sends the data from firebase to div AddPoem
+                    });
+                });
+        }
+    };
+</script>
 <style scoped lang="scss">
-h1 {
-    text-align: center;
-}
+    h1 {
+        text-align: center;
+    }
 </style>
