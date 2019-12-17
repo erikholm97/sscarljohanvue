@@ -10,8 +10,14 @@
                     v-bind:key="Poems.id"
                     class="collection-item"
             >
+               <!-- {{Poems.id}}  -->
                 {{ Poems.Rubrik }}          <!--  This is the poems headline/rubrik/name(?) -->
                 {{ Poems.PoemCont }}            <!--  This is the actuall content of the poem-->
+
+
+                <router-link class="secondary-content" v-bind:to="{name: 'view-poem', params:{id: Poems.id}}">
+                    <i class="fa fa-eye"/>
+                </router-link>
             </li>
         </ul>
     </div>
