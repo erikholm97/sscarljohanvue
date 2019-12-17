@@ -156,6 +156,10 @@ $font: "Montserrat", sans-serif;
             }
         }
         @media only screen and (max-width: 1200px) {
+            .page-title {
+                height: 100px;
+                width: 200px;
+            }
             .overflow {
                 display: none;
                 width: 100%;
@@ -207,6 +211,15 @@ $font: "Montserrat", sans-serif;
                 font-size: 20px;
                 font-weight: 600;
             }
+        }
+    }
+    @media only screen and (max-width: 375px) {
+        /* For screens smaller than 365px */
+        .carl-johan {
+            display: none;
+        }
+        .overflow {
+            height: 95px !important;
         }
     }
 }
