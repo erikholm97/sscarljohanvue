@@ -3,11 +3,11 @@ import Router from "vue-router";
 import Home from "./components/Home.vue";
 import Info from "./components/Info.vue";
 import HittaHit from "./components/HittaHit.vue";
-import Dikter from "./components/Dikter.vue";
+import Dikter from "./components/PoemCRUD/Dikter.vue";
 import LoggaIn from "./components/LoggaIn.vue";
-import AddPoem from "./components/AddPoem";
-//import EditPoem from "./components/EditPoem";
-import ViewPoem from "./components/ViewPoem";
+import AddPoem from "./components/PoemCRUD/AddPoem";
+import ViewPoem from "./components/PoemCRUD/ViewPoem";
+import EditPoem from "./components/PoemCRUD/EditPoem";
 
 Vue.use(Router);
 const router = new Router({
@@ -45,11 +45,20 @@ const router = new Router({
             component: AddPoem
         },
         {
-            path: '/edit:Poems.id',
-            name: 'edit-poem',
+          path: "/ViewPoem",
+          name: "ViewPoem",
+          component: ViewPoem
+        },
+        {
+            path: "/:Rubrik",
+            name: "view-poem",
             component: ViewPoem
         },
-        {path: 'Poems.id/:id', component: ViewPoem, name: 'view-poem'}
+        {
+            path: "/edit/:Rubrik",
+            name: "edit-poem",
+            component: EditPoem
+        }
     ]
 });
 export default router;
