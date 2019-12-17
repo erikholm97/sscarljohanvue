@@ -6,7 +6,7 @@ import HittaHit from "./components/HittaHit.vue";
 import Dikter from "./components/Dikter.vue";
 import LoggaIn from "./components/LoggaIn.vue";
 import AddPoem from "./components/AddPoem";
-import EditPoem from "./components/EditPoem";
+//import EditPoem from "./components/EditPoem";
 import ViewPoem from "./components/ViewPoem";
 
 Vue.use(Router);
@@ -49,7 +49,7 @@ const router = new Router({
             name: 'edit-poem',
             component: ViewPoem
         },
-        {path: 'Poems.id/:id', component: EditPoem, name: 'view-poem'}
+        {path: 'Poems.id/:id', component: ViewPoem, name: 'view-poem'}
     ]
 });
 export default router;
