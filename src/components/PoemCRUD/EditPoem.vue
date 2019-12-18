@@ -21,7 +21,7 @@
 </template>
 
 <script>
-    import db from "../firebaseInit";
+import db from "../firebaseInit";
 export default {
     name: "edit-poem",
     data() {
@@ -40,43 +40,46 @@ export default {
                         //  vm.id = doc.data().id;
                         vm.Rubrik = doc.data().Rubrik;
                         vm.PoemCont = doc.data().PoemCont;
-                    })
-                })
-            })
+                    });
+                });
+            });
     },
 
     watch: {
-        '$route': 'fetchData'
+        $route: "fetchData"
     },
     methods: {
         fetchData() {
             db.collection("Poems")
                 .where("Rubrik", "==", this.$route.params.Rubrik)
                 .get()
-                .then((querySnapshot) => {
-                    querySnapshot.forEach((doc) => {
+                .then(querySnapshot => {
+                    querySnapshot.forEach(doc => {
                         this.id = doc.data().id;
                         this.Rubrik = doc.data().Rubrik;
                         this.PoemCont = doc.data().PoemCont;
-                    })
-                })
+                    });
+                });
         },
-        updatePoem()
-        {
+        updatePoem() {
             db.collection("Poems")
                 .where("Rubrik", "==", this.$route.params.Rubrik)
                 .get()
-                .then((querySnapshot) => {
-                    querySnapshot.forEach((doc) => {
-                    doc.ref.update({
-                        Rubrik: this.Rubrik,
-                        PoemCont: this.PoemCont
-                    })
-                        .then(() => {
-                            this.$router.push({name: 'view-poem', params: {Rubrik: this.Rubrik}})
-                        })
-                    })
-                })
+                .then(querySnapshot => {
+                    querySnapshot.forEach(doc => {
+                        doc.ref
+                            .update({
+                                Rubrik: this.Rubrik,
+                                PoemCont: this.PoemCont
+                            })
+                            .then(() => {
+                                this.$router.push({
+                                    name: "view-poem",
+                                    params: { Rubrik: this.Rubrik }
+                                });
+                            });
+                    });
+                });
         }
     }
 };

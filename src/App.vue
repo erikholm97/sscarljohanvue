@@ -128,7 +128,7 @@ $font: "Montserrat", sans-serif;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                height: 250px;
+                height: 200px;
                 .page-title {
                     justify-content: center;
                     text-align: center;

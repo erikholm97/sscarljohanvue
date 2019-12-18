@@ -45,9 +45,9 @@ const router = new Router({
             component: AddPoem
         },
         {
-          path: "/ViewPoem",
-          name: "ViewPoem",
-          component: ViewPoem
+            path: "/ViewPoem",
+            name: "ViewPoem",
+            component: ViewPoem
         },
         {
             path: "/:Rubrik",
