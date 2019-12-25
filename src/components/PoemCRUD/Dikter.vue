@@ -1,31 +1,33 @@
 <template>
     <div id="AddPoem">
         <h1 class="page-header">Dikter</h1>
-        <ul class="collection-with-header">
-            <li
-                v-for="Poems in poems"
-                v-bind:key="Poems.id"
-                class="collection-item"
-            >
-                <!-- {{Poems.id}}  -->
-                <h1 class="poem-header">{{ Poems.Rubrik }}</h1>
-                <!--  This is the poems headline/rubrik/name(?) -->
-                <p>{{ Poems.PoemCont }}</p>
-                <!--  This is the actuall content of the poem-->
-
-                <router-link
-                    class="secondary-content"
-                    v-bind:to="{
-                        name: 'view-poem',
-                        params: { Rubrik: Poems.Rubrik }
-                    }"
+        <div class="poem">
+            <ul class="collection-with-header">
+                <li
+                    v-for="Poems in poems"
+                    v-bind:key="Poems.id"
+                    class="collection-item"
                 >
-                    <!--Params sets the link in the browser to the poems rubrik.-->
+                    <!-- {{Poems.id}}  -->
+                    <h2 class="poem-header">{{ Poems.Rubrik }}</h2>
+                    <!--  This is the poems headline/rubrik/name(?) -->
+                    <p>{{ Poems.PoemCont }}</p>
+                    <!--  This is the actuall content of the poem-->
 
-                    <i class="fa fa-eye" />
-                </router-link>
-            </li>
-        </ul>
+                    <router-link
+                        class="secondary-content"
+                        v-bind:to="{
+                            name: 'view-poem',
+                            params: { Rubrik: Poems.Rubrik }
+                        }"
+                    >
+                        <!--Params sets the link in the browser to the poems rubrik.-->
+
+                        <i class="fa fa-eye" />
+                    </router-link>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -61,10 +63,12 @@ export default {
 .page-header {
     text-align: center;
 }
-.poem-header {
-    text-align: left;
-}
-ul {
-    list-style-type: none;
+.poem {
+    .poem-header {
+        text-align: left;
+    }
+    ul {
+        list-style-type: none;
+    }
 }
 </style>

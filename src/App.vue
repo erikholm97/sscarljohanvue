@@ -15,6 +15,11 @@
                 <li>
                     <router-link to="Dikter">Dikter</router-link>
                 </li>
+                <li>
+                    <router-link class="contact" to="Kontakt"
+                        >Kontakt</router-link
+                    >
+                </li>
             </ul>
         </div>
         <div class="hamburger-navbar">
@@ -34,6 +39,8 @@
                     <router-link to="HittaHit">Hitta Hit</router-link>
 
                     <router-link to="Dikter">Dikter</router-link>
+
+                    <router-link to="Kontakt">Kontakt</router-link>
                 </div>
                 <a
                     href="javascript:void(0);"
@@ -98,6 +105,9 @@ $font: "Montserrat", sans-serif;
             li {
                 float: left;
                 text-align: center;
+            }
+            .contact {
+                float: right !important;
             }
             li a {
                 padding: 10px 16px;
