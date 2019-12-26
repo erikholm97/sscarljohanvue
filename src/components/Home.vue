@@ -62,7 +62,9 @@ export default {
 @media only screen and (max-width: 0px), only screen and (max-width: 1200px) {
     .page-content {
         display: block;
-
+        h1 {
+            text-align: center;
+        }
         .carl-johan-img {
             padding: 0 !important;
             width: 100%;

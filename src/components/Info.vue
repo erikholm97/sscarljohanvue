@@ -114,12 +114,24 @@ export default {
         opacity: 1;
     }
 }
+@media only screen and (max-width: 1200px),
+    only screen and (max-width: 1600px) {
+    .page-content {
+        .carl-johan-img {
+            width: 100%;
+            height: auto;
+            margin-left: 20px;
+        }
+    }
+}
 @media only screen and (max-width: 0px), only screen and (max-width: 1200px) {
     .page-content {
         display: block;
-
+        h1 {
+            text-align: center;
+        }
         .carl-johan-img {
-            padding: 0 !important;
+            margin-left: 0px;
             width: 100%;
             height: auto;
         }

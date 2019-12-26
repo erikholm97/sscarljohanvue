@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 class="header">Kontakt</h2>
+        <h1 class="header">Kontakt</h1>
         <address>
             <h3>Lennart Holm</h3>
             <a href="mailto:sscarljohan@hotmail.com">sscarljohan@hotmail.com</a
