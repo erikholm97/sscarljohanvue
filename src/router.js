@@ -8,6 +8,7 @@ import LoggaIn from "./components/LoggaIn.vue";
 import AddPoem from "./components/PoemCRUD/AddPoem";
 import ViewPoem from "./components/PoemCRUD/ViewPoem";
 import EditPoem from "./components/PoemCRUD/EditPoem";
+import Kontakt from "./components/Kontakt.vue";
 
 Vue.use(Router);
 const router = new Router({
@@ -33,6 +34,11 @@ const router = new Router({
             path: "/Dikter",
             name: "Dikter",
             component: Dikter
+        },
+        {
+            path: "/Kontakt",
+            name: "Kontakt",
+            component: Kontakt
         },
         {
             path: "/LoggaIn",
