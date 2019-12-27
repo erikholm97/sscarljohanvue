@@ -16,7 +16,6 @@ export default {
   data() {
     return {
       center: { lat: 58.067630, lng: 15.018338  },
-      
       mapTypeId: "terrain",
       markers: [
           
