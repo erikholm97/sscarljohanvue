@@ -40,7 +40,7 @@
         </div>
         <div class="vue-gallery">
             <div class="">
-                <h1>Carl Johan 140 år</h1>
+                <h1 class="gallery-header">Carl Johan 140 år</h1>
                 <gallery
                     :images="images"
                     :index="index"
@@ -113,6 +113,9 @@ export default {
     p {
         letter-spacing: normal;
     }
+}
+.gallery-header {
+    text-align: center;
 }
 .image {
     float: left;

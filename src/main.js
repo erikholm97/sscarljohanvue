@@ -7,9 +7,9 @@ require("dotenv").config();
 
 import * as VueGoogleMaps from "vue2-google-maps";
 Vue.use(VueGoogleMaps, {
-  load: {
-     key: "AIzaSyDgPAE_afsqOkLG5saarhNRMR_dornR468" }
-  
+    load: {
+        key: "AIzaSyDgPAE_afsqOkLG5saarhNRMR_dornR468"
+    }
 });
 
 Vue.use(firestorePlugin);
