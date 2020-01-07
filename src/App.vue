@@ -68,7 +68,7 @@ export default {
         Header
     },
     methods: {
-        // Funktion som används för hamburgerknappen.
+        // Function that takes the user to another page based on what link was pressed. 
         myFunction: function() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "block") {
