@@ -26,7 +26,7 @@ a[href^="mailto"]::before {
 }
 
 a[href^="tel"]::before {
-    content: "📞 ";
+    content: "📞 "; 
 }
 address {
     text-align: center;

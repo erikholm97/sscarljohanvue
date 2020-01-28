@@ -71,7 +71,6 @@ export default {
     justify-content: center;
 }
 @media only screen and (max-width: 447px) {
-    // Annars försvinner login knappen
     .login {
         display: flex;
         justify-content: center;

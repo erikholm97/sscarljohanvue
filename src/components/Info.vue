@@ -69,7 +69,7 @@ export default {
     props: {},
     data: function() {
         return {
-            images: [
+            images: [ // Function that returns an image in the gallery
                 "https://sscarljohan.files.wordpress.com/2012/09/dsc_5944.jpg?w=1020&h=539&zoom=2",
                 "https://sscarljohan.files.wordpress.com/2012/09/dsc_5937.jpg?w=275&h=&zoom=2",
                 "https://sscarljohan.files.wordpress.com/2012/09/dsc_5920.jpg?w=1500&h=",
